@@ -9,6 +9,18 @@ button, input {font-family: 'Poppins', sans-serif}
 body {background-color: #fff7e3}
 main {padding-left: 250px; padding-right: 250px;}
 
+
+.header-section p  {font-size: 24px; margin: 12px 0 30px 0;}
+.header-section a  {font-size: 24px; font-weight: bold; margin: 12px 0 30px 0; }
+.header-section h1 {font-size: 35px;}
+.header-section h2 {font-size: 30px;}
+.header-section h3 {font-size: 30px;}
+
+nav {
+    font-size: 30px;
+}
+
+
 /*<------------------------sluit, head------------------------>*/
 
 
@@ -23,16 +35,17 @@ main {padding-left: 250px; padding-right: 250px;}
 
 /*<------------------------start, header------------------------>*/
 
-.header-section p  {font-size: 24px; margin: 12px 0 30px 0;}
-.header-section a  {font-size: 24px; font-weight: bold; margin: 12px 0 30px 0; }
-.header-section h1 {font-size: 35px;}
-.header-section h2 {font-size: 30px;}
-.header-section h3 {font-size: 30px;}
+header nav aside ul {
+    margin: 30px 0 50px 50px;
+}
 
 
 /*Start, Bever afbeelding*/
-#Beaver {margin: 0 0 20px 0;
-    width: 50%;}
+.header-afbeelding {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100vw;
+}
 /*Sluit, Bever afbeelding*/
 
 
@@ -56,6 +69,14 @@ nav a:hover {color: black;}
 
 /*<------------------------start, main------------------------>*/
 
+main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vw;
+}
+
+
+
 .main-section p  {font-size: 24px; margin: 25px 0; }
 .main-section a  {font-size: 24px; font-weight: bold; }
 .main-section h1 {font-size: 35px;}
@@ -71,12 +92,15 @@ h1, time {margin: 0; /* Verwijdert de standaardmarges van h1 en time elementen *
 
 
 /*Start, Fuut afbeelding*/
-#fuut {width: 35%; margin: 0 0 50px; 0 }
+.bodyImage {
+    height: 500px;
+    margin: 50px 0 0 0;
+}
 /*Sluit, Fuut afbeelding*/
 
 
 /*Start, onderste 3 artikelen naast elkaar*/
-.articles-line {display: inline-block; text-align: center; margin: 0 46px 50px 0; min-width: 200px;}
+.articles-line {display: inline-block; text-align: center; margin: 50px 50px 50px 0; min-width: 200px;}
 /*Sluit, onderste 3 artikelen naast elkaar*/
 
 /*<------------------------sluit, main------------------------>*/
