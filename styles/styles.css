@@ -1,0 +1,98 @@
+
+/*<------------------------start, head------------------------>*/
+
+* {padding: 0; margin: 0; box-sizing: border-box}
+
+body {font-family: 'Poppins', sans-serif;}
+button, input {font-family: 'Poppins', sans-serif}
+
+body {background-color: #fff7e3}
+main {padding-left: 250px; padding-right: 250px;}
+
+/*<------------------------sluit, head------------------------>*/
+
+
+
+
+
+
+
+
+
+
+
+/*<------------------------start, header------------------------>*/
+
+.header-section p  {font-size: 24px; margin: 12px 0 30px 0;}
+.header-section a  {font-size: 24px; font-weight: bold; margin: 12px 0 30px 0; }
+.header-section h1 {font-size: 35px;}
+.header-section h2 {font-size: 30px;}
+.header-section h3 {font-size: 30px;}
+
+
+/*Start, Bever afbeelding*/
+#Beaver {margin: 0 0 20px 0;
+    width: 50%;}
+/*Sluit, Bever afbeelding*/
+
+
+
+/*//start, kleur van de nav links start*/
+nav a, nav a:visited {margin: 50px 0; color: olive;
+    text-decoration: none;
+    transition: color 0.3s;}
+nav a:hover {color: black;}
+/*//sluit, kleur van de nav links klaar*/
+
+/*<------------------------sluit, header------------------------>*/
+
+
+
+
+
+
+
+
+
+/*<------------------------start, main------------------------>*/
+
+.main-section p  {font-size: 24px; margin: 25px 0; }
+.main-section a  {font-size: 24px; font-weight: bold; }
+.main-section h1 {font-size: 35px;}
+.main-section h2 {font-size: 30px;}
+.main-section h3 {font-size: 30px;}
+
+h1, time {margin: 0; /* Verwijdert de standaardmarges van h1 en time elementen */}
+
+
+
+
+
+
+
+/*Start, Fuut afbeelding*/
+#fuut {width: 35%; margin: 0 0 50px; 0 }
+/*Sluit, Fuut afbeelding*/
+
+
+/*Start, onderste 3 artikelen naast elkaar*/
+.articles-line {display: inline-block; text-align: center; margin: 0 46px 50px 0; min-width: 200px;}
+/*Sluit, onderste 3 artikelen naast elkaar*/
+
+/*<------------------------sluit, main------------------------>*/
+
+
+
+
+
+
+
+/*<------------------------start, footer------------------------>*/
+.footer-section p  {font-size: 24px; margin: 25px 0;}
+.footer-section a  {font-size: 24px; font-weight: bold;}
+.footer-section h1 {font-size: 35px;}
+.footer-section h2 {font-size: 30px;}
+.footer-section h3 {font-size: 30px;}
+
+
+/*<------------------------sluit, footer------------------------>*/
