@@ -66,31 +66,99 @@ a:link {
 }
 /*Typography end*/
 
+footer p {
+    color: var(--white);
+}
+
 
 /*----------Basic information end----------*/
-
-
-
-
-
-
 /*----------Header start----------*/
-
-
-/*----------Header end----------*/
-
-
-
-
-
-/*----------Main start----------*/
 header {
-    background-color: green;
+    /*headerOuterBox*/
+    Border: 2px solid #a80202;
+    display: flex;
+    flex-direction: row;
+}
+
+.headerInnerBox {
+    /*headerInnerBox*/
+    Border: 2px solid darkgreen;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    /*Natuurverhaal.nl*/
+    Border: 2px solid #a80202;
+    display: flex;
+    flex-direction: row;
+}
+
+header ul {
+    /*header nav list*/
+    Border: 2px solid #a80202;
+    display: flex;
+    flex-direction: column;
+}
+
+header li {
+    /*header nav list*/
+    Border: 2px solid #b700c7;
     display: flex;
     flex-direction: row;
 }
 
 
+
+
+/*----------Header end----------*/
+/*----------Main start----------*/
+
+main {
+    /*mainOuterBox*/
+    Border: 2px solid #d46900;
+    display: flex;
+    flex-direction: row;
+}
+
+.mainInnerBox{
+    /*mainOuterBox*/
+    Border: 2px solid #b700c7;
+    display: flex;
+    flex-direction: column;
+}
+
+main .blogBox {
+    /*mainOuterBox*/
+    Border: 2px solid #d46900;
+    display: flex;
+    flex-direction: column;
+}
+
+main .blogBox h1 {
+    /*blogTitle*/
+    Border: 2px solid #286a0a;
+    display: flex;
+    flex-direction: row;
+}
+
+main .blogBox h2 {
+    /*blogReadMore*/
+    Border: 2px solid #a80202;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+header {
+    background-color: #6E6043;
+    display: flex;
+    flex-direction: row;
+}
 
 
 main {
@@ -102,7 +170,14 @@ main {
 
 
 /*----------Main end----------*/
-
-
 /*----------Footer start----------*/
+footer{
+    /*mainOuterBox*/
+    Border: 2px solid #b700c7;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--black);
+}
+
+
 /*----------Footer end----------*/
