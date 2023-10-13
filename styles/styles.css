@@ -12,6 +12,7 @@
     --white: #FFFFFF;
     --grey: #434343;
     /*colors end*/
+    --basisMargin: margin 0 30px;
 }
 
 
@@ -39,8 +40,14 @@ input {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    /*color: var()*/
+    color: var(--white)
 }
+
+header h1,
+header li{
+    color: var(--black);
+}
+
 
 h1 {
     /*color: var()*/
@@ -77,6 +84,23 @@ a:link {
 
 
 /*----------Main start----------*/
+header {
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+main {
+    margin: var(--basisMargin);
+    background-color: var(--grey);
+}
+
+
+
+
 /*----------Main end----------*/
 
 
