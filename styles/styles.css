@@ -1,11 +1,53 @@
 * {padding: 0; margin: 0; box-sizing: border-box}
 
 
-/*----------Typography start----------*/
+
+/*----------Basic information start----------*/
+
+:root {
+    /*colors start*/
+    --brown: #8b4208;
+    --lightBrown: #a68d7a;
+    --black: #000000;
+    --white: #FFFFFF;
+    --grey: #434343;
+    /*colors end*/
+}
 
 
+a:visited,
+a:link {
+    text-decoration: none;
+}
 
-/*----------Typography end----------*/
+button:hover {
+    cursor: pointer;
+}
+
+img {
+    width:100%
+}
+
+/*Typography start*/
+button, input {
+}
+
+h1, h2, h3, h4, h5, h6, {
+}
+
+h1 {
+}
+
+p{
+}
+
+
+a:link {
+}
+/*Typography end*/
+
+
+/*----------Basic information end----------*/
 
 
 
