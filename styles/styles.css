@@ -11,11 +11,11 @@
     --lightBrown: #a68d7a;
     --black: #000000;
     --white: #FFFFFF;
-    --grey: #434343;
+    --lightGrey: #f2f2f2;
     /*colors end*/
     --basisMargin: margin 0 30px;
-    --TitleFont: "Young Serif";
-    --NormalText: "Roboto";
+    --titleFont: "Young Serif";
+    --normalText: "Roboto";
 }
 
 
@@ -25,14 +25,12 @@ a,
 a:visited,
 a:link {
     text-decoration: none;
-    /*color: var()*/
-    font-family: var(--NormalText);
 }
 
 button:hover {
     cursor: pointer;
     /*color: var()*/
-    font-family: var(--NormalText);
+    font-family: var(--normalText);
 }
 
 img {
@@ -42,37 +40,37 @@ img {
 /*Typography start*/
 button,
 input {
-    font-family: var(--NormalText);
+    font-family: var(--normalText);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--white);
-    font-family: var(--TitleFont);
+    color: var(--black);
+    font-family: var(--titleFont);
 }
 
 header li{
     color: var(--black);
-    font-family: var(--TitleFont);
+    font-family: var(--titleFont);
 }
 
 
-h1 {
+header h1 {
+    /*natuurverhaal.nl*/
     color: var(--black);
-    font-family: var(--TitleFont);
-    font-size: 4em;
+    font-family: var(--titleFont);
+    font-size: 5em;
 }
 
-header ul li {
+header ul li a{
     color: var(--black);
-    font-family: var(--TitleFont);
+    font-family: var(--titleFont);
     font-size: 2em;
-
 }
 
 
 p{
     /*color: var()*/
-    font-family: var(--NormalText);
+    font-family: var(--normalText);
 }
 
 footer p {
@@ -84,7 +82,7 @@ footer p {
 /*----------Header start----------*/
 header {
     /*headerOuterBox*/
-    Border: 2px solid #a80202;
+    /*Border: 2px solid #a80202;*/
     display: flex;
     flex-direction: row;
     height: 600px;
@@ -93,7 +91,7 @@ header {
 
 .headerInnerBox {
     /*headerInnerBox*/
-    Border: 2px solid darkgreen;
+    /*Border: 2px solid darkgreen;*/
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -101,7 +99,7 @@ header {
 
 header h1 {
     /*Natuurverhaal.nl*/
-    Border: 2px solid #a80202;
+    /*Border: 2px solid #a80202;*/
     display: flex;
     flex-direction: row;
     margin: 4rem 0 0 4rem;
@@ -109,7 +107,7 @@ header h1 {
 
 header ul {
     /*header nav list*/
-    Border: 2px solid #a80202;
+    /*Border: 2px solid #a80202;*/
     display: flex;
     flex-direction: column;
     margin: 2rem 0 2rem 4rem;
@@ -118,7 +116,7 @@ header ul {
 
 header li {
     /*header nav list*/
-    Border: 2px solid #b700c7;
+    /*Border: 2px solid #b700c7;*/
     display: flex;
     flex-direction: row;
     margin: 0.7rem 0;
@@ -132,35 +130,39 @@ header li {
 
 main {
     /*mainOuterBox*/
-    Border: 2px solid #d46900;
+    /*Border: 2px solid #d46900;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: var(--white);
 }
 
 .mainInnerBox{
     /*mainOuterBox*/
-    Border: 2px solid #b700c7;
+    /*Border: 2px solid #b700c7;*/
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 100%;
 
 }
 
 main .blogBox {
     /*mainOuterBox*/
-    Border: 2px solid #d46900;
+    /*Border: 2px solid #d46900;*/
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
-    margin: 20px 0;
+    margin-top: 2rem;
     padding: 20px;
+    background-color: var(--lightGrey);
+}
 
+main .blogBoxLast {
+    margin-bottom: 2rem;
 }
 
 main .blogBox h1 {
     /*blogTitle*/
-    Border: 2px solid #286a0a;
+    /*Border: 2px solid #286a0a;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -168,7 +170,7 @@ main .blogBox h1 {
 
 main .blogBox h2 {
     /*blogReadMore*/
-    Border: 2px solid #a80202;
+    /*Border: 2px solid #a80202;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -186,10 +188,6 @@ header {
 }
 
 
-main {
-    margin: var(--basisMargin);
-    background-color: var(--grey);
-}
 
 
 
