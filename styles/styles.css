@@ -1,5 +1,6 @@
-* {padding: 0; margin: 0; box-sizing: border-box}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&family=Young+Serif&display=swap');
 
+* {padding: 0; margin: 0; box-sizing: border-box}
 
 
 /*----------Basic information start----------*/
@@ -13,6 +14,8 @@
     --grey: #434343;
     /*colors end*/
     --basisMargin: margin 0 30px;
+    --TitleFont: "Young Serif";
+    --NormalText: "Roboto";
 }
 
 
@@ -23,11 +26,13 @@ a:visited,
 a:link {
     text-decoration: none;
     /*color: var()*/
+    font-family: var(--NormalText);
 }
 
 button:hover {
     cursor: pointer;
     /*color: var()*/
+    font-family: var(--NormalText);
 }
 
 img {
@@ -37,40 +42,44 @@ img {
 /*Typography start*/
 button,
 input {
+    font-family: var(--NormalText);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--white)
+    color: var(--white);
+    font-family: var(--TitleFont);
 }
 
-header h1,
 header li{
     color: var(--black);
+    font-family: var(--TitleFont);
 }
 
 
 h1 {
-    /*color: var()*/
+    color: var(--black);
+    font-family: var(--TitleFont);
+    font-size: 4em;
 }
+
+header ul li {
+    color: var(--black);
+    font-family: var(--TitleFont);
+    font-size: 2em;
+
+}
+
 
 p{
     /*color: var()*/
+    font-family: var(--NormalText);
 }
-
-input,
-button {
-font-family: inherit;
-}
-
-a:link {
-}
-/*Typography end*/
 
 footer p {
     color: var(--white);
 }
 
-
+/*Typography end*/
 /*----------Basic information end----------*/
 /*----------Header start----------*/
 header {
@@ -78,6 +87,8 @@ header {
     Border: 2px solid #a80202;
     display: flex;
     flex-direction: row;
+    height: 600px;
+
 }
 
 .headerInnerBox {
@@ -85,6 +96,7 @@ header {
     Border: 2px solid darkgreen;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 header h1 {
@@ -92,6 +104,7 @@ header h1 {
     Border: 2px solid #a80202;
     display: flex;
     flex-direction: row;
+    margin: 1em 0 0 1em;
 }
 
 header ul {
@@ -99,6 +112,8 @@ header ul {
     Border: 2px solid #a80202;
     display: flex;
     flex-direction: column;
+    margin: 40px 0;
+
 }
 
 header li {
@@ -106,6 +121,7 @@ header li {
     Border: 2px solid #b700c7;
     display: flex;
     flex-direction: row;
+    margin: 20px 0;
 }
 
 
@@ -119,6 +135,7 @@ main {
     Border: 2px solid #d46900;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .mainInnerBox{
@@ -126,6 +143,8 @@ main {
     Border: 2px solid #b700c7;
     display: flex;
     flex-direction: column;
+    width: 600px;
+
 }
 
 main .blogBox {
@@ -133,6 +152,10 @@ main .blogBox {
     Border: 2px solid #d46900;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+
 }
 
 main .blogBox h1 {
@@ -140,6 +163,7 @@ main .blogBox h1 {
     Border: 2px solid #286a0a;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 main .blogBox h2 {
@@ -147,6 +171,7 @@ main .blogBox h2 {
     Border: 2px solid #a80202;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 
@@ -177,6 +202,8 @@ footer{
     display: flex;
     flex-direction: row;
     background-color: var(--black);
+    padding: 20px 0;
+    justify-content: center;
 }
 
 
