@@ -61,16 +61,28 @@ header h1 {
     font-size: 5em;
 }
 
+/*header ul li a{*/
+/*    color: var(--black);*/
+/*    font-family: var(--titleFont);*/
+/*    font-size: 2em;*/
+/*}*/
+
 header ul li a{
     color: var(--black);
     font-family: var(--titleFont);
     font-size: 2em;
-}
+    transition: all 0.25s ease-out; }
+
+ header ul li a:hover {
+     color: var(--brown);
+     font-size: 2.5rem;}
+
 
 
 p{
     /*color: var()*/
     font-family: var(--normalText);
+    font-size: 1.4rem;
 }
 
 footer p {
@@ -111,8 +123,7 @@ header ul {
     display: flex;
     flex-direction: column;
     margin: 2rem 0 2rem 4rem;
-
-}
+    }
 
 header li {
     /*header nav list*/
@@ -151,9 +162,10 @@ main .blogBox {
     /*Border: 2px solid #d46900;*/
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+
     padding: 20px;
     background-color: var(--lightGrey);
+    margin: 2rem 30px 0 30px;
 }
 
 main .blogBoxLast {
@@ -176,6 +188,85 @@ main .blogBox h2 {
     justify-content: center;
 }
 
+
+/*Collapsible start*/
+/*Collapsible start*/
+/*Collapsible start*/
+
+input[type='checkbox'] { display: none; }
+
+.wrap-collabsible {
+    margin-bottom: 1.2rem;
+}
+
+
+.lbl-toggle {
+    /*Title text collapsible*/
+    display: block;
+    font-weight: bold;
+    font-family: var(--titleFont);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+    /*Title text collapsible hoverColor*/
+    color: var(--brown);
+}
+
+.lbl-toggle::before {
+    /*Triangle icon*/
+    content: ' ';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle; margin-right: .7rem;
+    transform: translateY(-2px);
+    transition: transform .2s ease-out;
+}
+
+.toggle:checked+.lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+    /*This hides the collapsible content*/
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+    text-align: center
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 100%;
+}
+
+.toggle:checked+.lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+    /*Styles for inner content*/
+    background: var(--lightGrey);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 1rem 1rem;
+    Border: 2px solid #d46900;
+}
+
+.collapsible-content p {
+    margin-bottom: 0;
+}
+
+/*Collapsible end*/
+/*Collapsible end*/
+/*Collapsible end*/
 
 
 
