@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&family=Young+Serif&display=swap');
 
+
+
 * {padding: 0; margin: 0; box-sizing: border-box}
 
 
@@ -163,7 +165,7 @@ main .blogBox {
     display: flex;
     flex-direction: column;
 
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     background-color: var(--lightGrey);
     margin: 2rem 30px 0 30px;
 }
@@ -207,9 +209,8 @@ input[type='checkbox'] { display: none; }
     font-family: var(--titleFont);
     font-size: 1.5rem;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem 0 0 0;
     cursor: pointer;
-    border-radius: 7px;
     transition: all 0.25s ease-out;
 }
 
@@ -257,7 +258,7 @@ input[type='checkbox'] { display: none; }
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
     padding: 1rem 1rem;
-    Border: 2px solid #d46900;
+    /*Border: 2px solid #d46900;*/
 }
 
 .collapsible-content p {
