@@ -12,21 +12,31 @@
     --brown: #8b4208;
     --lightBrown: #a68d7a;
     --black: #000000;
-    --white: #FFFFFF;
-    --lightGrey: #f2f2f2;
     --grey: #9B9A9C;
+    --lightGrey: #f2f2f2;
+    --white: #FFFFFF;
     /*colors end*/
-    --basisMargin: margin 0 30px;
+
+    /*font-family`s start*/
     --titleFont: "Young Serif";
     --normalText: "Roboto";
-    --titleSize: 5rem;
+    /*font-family`s end*/
+
+    /*font-sizes start*/
+    --h1FontSize: 5rem;
+    --h2FontSize: 1.8rem;
+    --pTextSize: 1.4rem;
     --aFontSize: 2rem;
     --aHoverFontSize: 2.5rem;
-    --pTextSize: 1.4rem;
-    --h1FontSize: 5rem;
-    --h2FontSize: 2rem;
+    --postDateFontSize: 1.2rem;
+    /*font-sizes end*/
+
+    /*others start*/
+    --basisMargin: margin 0 30px;
+    /*others end*/
 }
 
+/*Other basic information start*/
 button:hover {
     cursor: pointer;
     /*color: var()*/
@@ -36,6 +46,10 @@ button:hover {
 img {
     width:100%
 }
+/*Other basic information end*/
+
+
+
 
 /*Typography start*/
 button,
@@ -44,13 +58,13 @@ input {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    /*H`s colors & fontfams*/
+    /*H`s colors & font-fams*/
     color: var(--black);
     font-family: var(--titleFont);
 }
 
-h1 {
-    /*H1 Size*/
+header h1 {
+    /*natuurverhaal.nl*/
     font-size: var(--h1FontSize);
 }
 
@@ -64,27 +78,18 @@ header li{
     font-family: var(--titleFont);
 }
 
-header h1 {
-    /*natuurverhaal.nl*/
-    color: var(--black);
-    font-family: var(--titleFont);
-    font-size: var(--titleSize);
-}
-
-
 header ul li a{
     color: var(--black);
     font-family: var(--titleFont);
      }
 
 p{
-    /*color: var()*/
     font-family: var(--normalText);
     font-size: var(--pTextSize);
 }
 
-.postDatum {
-    font-size: 1.2rem;
+.postDate {
+    font-size: var(--postDateFontSize);
     color: var(--grey);
     font-style: italic;
 }
@@ -93,9 +98,7 @@ footer p {
     color: var(--white);
 }
 
-a,
-a:visited,
-a:link {
+a, a:visited, a:link {
     text-decoration: none;
     color: var(--black);
     font-weight: bold;
@@ -323,7 +326,7 @@ header {
 /*----------Footer start----------*/
 footer{
     /*mainOuterBox*/
-    Border: 2px solid #b700c7;
+    /*Border: 2px solid #b700c7;*/
     display: flex;
     flex-direction: row;
     background-color: var(--black);
