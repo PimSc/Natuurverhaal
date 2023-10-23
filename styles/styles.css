@@ -14,10 +14,17 @@
     --black: #000000;
     --white: #FFFFFF;
     --lightGrey: #f2f2f2;
+    --grey: #9B9A9C;
     /*colors end*/
     --basisMargin: margin 0 30px;
     --titleFont: "Young Serif";
     --normalText: "Roboto";
+    --titleSize: 5rem;
+    --aFontSize: 2rem;
+    --aHoverFontSize: 2.5rem;
+    --pTextSize: 1.4rem;
+    --h1FontSize: 5rem;
+    --h2FontSize: 2rem;
 }
 
 button:hover {
@@ -37,8 +44,19 @@ input {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    /*H`s colors & fontfams*/
     color: var(--black);
     font-family: var(--titleFont);
+}
+
+h1 {
+    /*H1 Size*/
+    font-size: var(--h1FontSize);
+}
+
+h2 {
+    /*H2 Size*/
+    font-size: var(--h2FontSize);
 }
 
 header li{
@@ -50,32 +68,50 @@ header h1 {
     /*natuurverhaal.nl*/
     color: var(--black);
     font-family: var(--titleFont);
-    font-size: 5em;
+    font-size: var(--titleSize);
 }
 
-/*header ul li a{*/
-/*    color: var(--black);*/
-/*    font-family: var(--titleFont);*/
-/*    font-size: 2em;*/
-/*}*/
 
 header ul li a{
     color: var(--black);
     font-family: var(--titleFont);
-    font-size: 2em;
-    transition: all 0.25s ease-out; }
-
-
+     }
 
 p{
     /*color: var()*/
     font-family: var(--normalText);
-    font-size: 1.4rem;
+    font-size: var(--pTextSize);
+}
+
+.postDatum {
+    font-size: 1.2rem;
+    color: var(--grey);
+    font-style: italic;
 }
 
 footer p {
     color: var(--white);
 }
+
+a,
+a:visited,
+a:link {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--brown);
+    font-size: var(--aHoverFontSize);
+    margin-top: -0.7rem;
+    transition: all 0.25s ease-in-out; }
+
+a {
+    color: var(--black);
+    font-family: var(--titleFont);
+    font-size: var(--aFontSize);
+    transition: all 0.25s ease-out; }
 
 /*Typography end*/
 /*----------Basic information end----------*/
@@ -125,25 +161,7 @@ header li {
     margin: 0.7rem 0;
 }
 
-a,
-a:visited,
-a:link {
-    text-decoration: none;
-    color: var(--black);
-    font-size: 2.0rem;
-    font-weight: bold;
-}
 
-a:hover {
-    color: var(--brown);
-    font-size: 2.5rem;
-    margin-top: -0.7rem;
-    transition: all 0.25s ease-in-out; }
-a {
-color: var(--black);
-font-family: var(--titleFont);
-font-size: 2em;
-transition: all 0.25s ease-out; }
 
 
 /*----------Header end----------*/
@@ -315,3 +333,35 @@ footer{
 
 
 /*----------Footer end----------*/
+/*----------Media queries Start----------*/
+
+
+
+
+/*----------Media queries End----------*/
+@media screen and (max-width: 576px) {
+
+    header h1 {
+        /*natuurverhaal.nl*/
+        color: var(--black);
+        font-family: var(--titleFont);
+        font-size: calc(var(--titleSize) - 2.5rem);
+    }
+
+    a:hover {
+        font-size: calc(var(--aHoverFontSize) - 1rem);
+        margin-top: -0.2rem;
+    }
+
+    a {
+        font-size: calc(var(--aFontSize) - 0.5rem);
+    }
+
+    .postDatum {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: calc(var(--h2FontSize) - 0.5rem);
+    }
+}
