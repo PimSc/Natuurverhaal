@@ -52,11 +52,11 @@ const blog = {
 
 
 // Voorziet blog 1 van tekst en afbeeldingen (Start)
-let blog1TitleElement = document.getElementById("titleBlog1");
-let blog1TextElement = document.getElementById("textBlog1");
-
-blog1TitleElement.textContent = blog.blog1.title;
-blog1TextElement.textContent = blog.blog1.text1;
+// let blog1TitleElement = document.getElementById("titleBlog1");
+// let blog1TextElement = document.getElementById("textBlog1");
+//
+// blog1TitleElement.textContent = blog.blog1.title;
+// blog1TextElement.textContent = blog.blog1.text1;
 // Voorziet blog 1 van tekst en afbeeldingen (End)
 
 

@@ -20,15 +20,6 @@
     --normalText: "Roboto";
 }
 
-
-
-
-a,
-a:visited,
-a:link {
-    text-decoration: none;
-}
-
 button:hover {
     cursor: pointer;
     /*color: var()*/
@@ -55,7 +46,6 @@ header li{
     font-family: var(--titleFont);
 }
 
-
 header h1 {
     /*natuurverhaal.nl*/
     color: var(--black);
@@ -74,10 +64,6 @@ header ul li a{
     font-family: var(--titleFont);
     font-size: 2em;
     transition: all 0.25s ease-out; }
-
- header ul li a:hover {
-     color: var(--brown);
-     font-size: 2.5rem;}
 
 
 
@@ -100,7 +86,10 @@ header {
     display: flex;
     flex-direction: row;
     height: 600px;
-    background-image: url("../assets/Header.jpg");
+    background-image: url("../assets/Header(2).jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .headerInnerBox {
@@ -109,6 +98,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 4rem;
 }
 
 header h1 {
@@ -116,7 +106,7 @@ header h1 {
     /*Border: 2px solid #a80202;*/
     display: flex;
     flex-direction: row;
-    margin: 4rem 0 0 4rem;
+    /*margin: 4rem 0 0 4rem;*/
 }
 
 header ul {
@@ -124,7 +114,7 @@ header ul {
     /*Border: 2px solid #a80202;*/
     display: flex;
     flex-direction: column;
-    margin: 2rem 0 2rem 4rem;
+    margin: 2rem 0 2rem 0;
     }
 
 header li {
@@ -135,7 +125,25 @@ header li {
     margin: 0.7rem 0;
 }
 
+a,
+a:visited,
+a:link {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 2.0rem;
+    font-weight: bold;
+}
 
+a:hover {
+    color: var(--brown);
+    font-size: 2.5rem;
+    margin-top: -0.7rem;
+    transition: all 0.25s ease-in-out; }
+a {
+color: var(--black);
+font-family: var(--titleFont);
+font-size: 2em;
+transition: all 0.25s ease-out; }
 
 
 /*----------Header end----------*/
@@ -156,7 +164,14 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
 
+.blogImageVertical {
+    width: 250px;
+}
+
+.blogImageHorizontal {
+    width: 400px;
 }
 
 main .blogBox {
@@ -168,10 +183,12 @@ main .blogBox {
     padding: 20px 20px 0 20px;
     background-color: var(--lightGrey);
     margin: 2rem 30px 0 30px;
+    text-align: center
 }
 
 main .blogBoxLast {
     margin-bottom: 2rem;
+    padding: 2rem 1rem;
 }
 
 main .blogBox h1 {
@@ -240,7 +257,7 @@ input[type='checkbox'] { display: none; }
     max-height: 0;
     overflow: hidden;
     transition: max-height .25s ease-in-out;
-    text-align: center
+    /*text-align: center*/
 }
 
 .toggle:checked + .lbl-toggle + .collapsible-content {
