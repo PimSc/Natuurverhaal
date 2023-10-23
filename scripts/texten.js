@@ -1,4 +1,80 @@
-const blog = {
+
+document.addEventListener("DOMContentLoaded", function () {
+    const collapsibleArticles = document.querySelectorAll(".collapsible-article");
+
+    collapsibleArticles.forEach(function (article) {
+        const toggleCheckbox = article.querySelector(".toggle");
+        const videoPlayer = article.querySelector("#videoPlayer-Camera-op-de-nieuw-ontdekte-beverburcht");
+
+        article.addEventListener("click", function () {
+            toggleCheckbox.checked = !toggleCheckbox.checked;
+
+            // Stop video when the collapsible is closed
+            if (!toggleCheckbox.checked) {
+                pauseVideo(videoPlayer);
+            }
+        });
+    });
+
+    // Function to pause YouTube video
+    function pauseVideo(player) {
+        const videoSrc = player.src;
+        player.src = videoSrc;
+    }
+});
+
+
+
+//
+// // This code makes the whole collapsible field is clickable. start
+// document.addEventListener("DOMContentLoaded", function () {
+//     const collapsibleArticles = document.querySelectorAll(".collapsible-article");
+//
+//     collapsibleArticles.forEach(function (article) {
+//         const toggleCheckbox = article.querySelector(".toggle");
+//
+//         article.addEventListener("click", function () {
+//             toggleCheckbox.checked = !toggleCheckbox.checked;
+//         });
+//     });
+// });
+// // This code makes the whole collapsible field is clickable. End
+//
+//
+// // This code makes the youtube video stop playing when folding the collapsible in. Start
+// document.addEventListener("DOMContentLoaded", function () {
+//     const collapsibleArticles = document.querySelectorAll(".collapsible-article");
+//
+//     collapsibleArticles.forEach(function (article) {
+//         const toggleCheckbox = article.querySelector(".toggle");
+//         const videoPlayer = article.querySelector("#videoPlayer-Camera-op-de-nieuw-ontdekte-beverburcht");
+//
+//         article.addEventListener("click", function () {
+//             toggleCheckbox.checked = !toggleCheckbox.checked;
+//
+//             // Stop video when the collapsible is closed
+//             if (!toggleCheckbox.checked) {
+//                 pauseVideo(videoPlayer);
+//             }
+//         });
+//     });
+//
+//     // Function to pause Youtube
+//     function pauseVideo(player) {
+//         const videoSrc = player.src;
+//         player.src = videoSrc;
+//     }
+// });
+// // This code makes the youtube video stop playing when folding the collapsible in. End
+
+
+
+
+
+
+
+
+    const blog = {
     blog1: {
         title: "Placeholder titel blog 1",
         text1: "Placeholder text blog 1",

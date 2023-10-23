@@ -233,9 +233,17 @@ main .blogBox h2 {
 /*Collapsible start*/
 /*Collapsible start*/
 
+.collapsible-article {
+    cursor: pointer;
+}
+
+.collapsible-article .toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 100%;
+}
+
 input[type='checkbox'] { display: none; }
 
-.wrap-collabsible {
+.wrap-collapsible {
     margin-bottom: 1.2rem;
 }
 
