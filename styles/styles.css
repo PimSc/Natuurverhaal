@@ -387,27 +387,27 @@ footer{
 /*----------Media queries End----------*/
 @media screen and (max-width: 576px) {
 
-    /*header h1 {*/
-    /*    !*natuurverhaal.nl*!*/
-    /*    color: var(--black);*/
-    /*    font-family: var(--titleFont);*/
-    /*    font-size: calc(var(--h1FontSize) - 2.5rem);*/
-    /*}*/
+    header h1 {
+        /*natuurverhaal.nl*/
+        color: var(--black);
+        font-family: var(--titleFontFam);
+        font-size: calc(var(--h1FontSize) - 2.5rem);
+    }
 
-    /*a:hover {*/
-    /*    font-size: calc(var(--aHoverEaseOutFontSize) - 1rem);*/
-    /*    margin-top: -0.2rem;*/
-    /*}*/
+    a:hover {
+        font-size: calc(var(--aHoverEaseOutFontSize) - 1rem);
+        margin-top: -0.2rem;
+    }
 
-    /*a {*/
-    /*    font-size: calc(var(--aFontSize) - 0.5rem);*/
-    /*}*/
+    a {
+        font-size: calc(var(--pFontSize) - 0.5rem);
+    }
 
-    /*.postDatum {*/
-    /*    font-size: 1.2rem;*/
-    /*}*/
+    .postDatum {
+        font-size: 1.2rem;
+    }
 
-    /*h2 {*/
-    /*    font-size: calc(var(--h2FontSize) - 0.5rem);*/
-    /*}*/
+    h2 {
+        font-size: calc(var(--h2FontSize) - 0.5rem);
+    }
 }
