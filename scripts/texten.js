@@ -91,13 +91,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// Voorziet blog 2 van tekst en afbeeldingen (Start)
-let blog2TitleElement = document.getElementById("titleBlog2");
-let blog2TextElement = document.getElementById("textBlog2");
-
-blog2TitleElement.textContent = blog.blog2.title;
-blog2TextElement.textContent = blog.blog2.text1;
-// Voorziet blog 2 van tekst en afbeeldingen (End)
+// // Voorziet blog 2 van tekst en afbeeldingen (Start)
+// let blog2TitleElement = document.getElementById("titleBlog2");
+// let blog2TextElement = document.getElementById("textBlog2");
+//
+// blog2TitleElement.textContent = blog.blog2.title;
+// blog2TextElement.textContent = blog.blog2.text1;
+// // Voorziet blog 2 van tekst en afbeeldingen (End)
 
 
 
