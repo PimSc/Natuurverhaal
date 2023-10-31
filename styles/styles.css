@@ -12,22 +12,23 @@
     --brown: #8b4208;
     --lightBrown: #a68d7a;
     --black: #000000;
+    --darkerGrey: #4B4A4C;
     --grey: #9B9A9C;
     --lightGrey: #f2f2f2;
     --white: #FFFFFF;
     /*colors end*/
 
     /*font-family`s start*/
-    --titleFont: "Young Serif";
-    --normalText: "Roboto";
+    --titleFontFam: "Young Serif";
+    --normalTextFontFam: "Roboto";
     /*font-family`s end*/
 
     /*font-sizes start*/
     --h1FontSize: 5rem;
     --h2FontSize: 1.8rem;
-    --pTextSize: 1.4rem;
-    --aFontSize: 2rem;
-    --aHoverFontSize: 2.5rem;
+    --pFontSize: 1.4rem;
+    --aTitleFontSize: 2rem;
+    --aHoverEaseOutFontSize: 2.5rem;
     --postDateFontSize: 1.2rem;
     /*font-sizes end*/
 
@@ -40,7 +41,7 @@
 button:hover {
     cursor: pointer;
     /*color: var()*/
-    font-family: var(--normalText);
+    font-family: var(--normalTextFontFam);
 }
 
 img {
@@ -54,13 +55,13 @@ img {
 /*Typography start*/
 button,
 input {
-    font-family: var(--normalText);
+    font-family: var(--normalTextFontFam);
 }
 
 h1, h2, h3, h4, h5, h6 {
     /*H`s colors & font-fams*/
     color: var(--black);
-    font-family: var(--titleFont);
+    font-family: var(--titleFontFam);
 }
 
 header h1 {
@@ -73,19 +74,10 @@ h2 {
     font-size: var(--h2FontSize);
 }
 
-header li{
-    color: var(--black);
-    font-family: var(--titleFont);
-}
-
-header ul li a{
-    color: var(--black);
-    font-family: var(--titleFont);
-     }
 
 p{
-    font-family: var(--normalText);
-    font-size: var(--pTextSize);
+    font-family: var(--normalTextFontFam);
+    font-size: var(--pFontSize);
 }
 
 .postDate {
@@ -98,23 +90,64 @@ footer p {
     color: var(--white);
 }
 
-a, a:visited, a:link {
-    text-decoration: none;
-    color: var(--black);
-    font-weight: bold;
+
+
+a {
+    font-family: var(--normalTextFontFam);
+    font-size: var(--pFontSize);
+    color: var(--darkerGrey);
 }
+
+/*a, a:visited, a:link {*/
+/*    text-decoration: none;*/
+/*}*/
 
 a:hover {
     color: var(--brown);
-    font-size: var(--aHoverFontSize);
-    margin-top: -0.7rem;
-    transition: all 0.25s ease-in-out; }
+    transition: all 0.25s ease-in-out;
+}
 
-a {
+.EaseOutA a:hover {
+    margin-top: -0.7rem;
+    transition: all 0.25s ease-in-out;
+    font-size: var(--aHoverEaseOutFontSize);
+    font-family: var(--titleFontFam);
+    color: var(--brown);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.EaseOutA a{
+    margin-top: -0.7rem;
+    transition: all 0.25s ease-in-out;
+    font-size: var(--aTitleFontSize);
+    font-family: var(--titleFontFam);
     color: var(--black);
-    font-family: var(--titleFont);
-    font-size: var(--aFontSize);
-    transition: all 0.25s ease-out; }
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.EaseOutAMoreBlogs a{
+    margin-top: -0.7rem;
+    transition: all 0.25s ease-in-out;
+    font-size: var(--h2FontSize);
+    font-family: var(--titleFontFam);
+    color: var(--black);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.EaseOutAMoreBlogs a:hover {
+    margin-top: -0.9rem;
+    transition: all 0.25s ease-in-out;
+    font-size: var(--aTitleFontSize);
+    font-family: var(--titleFontFam);
+    color: var(--brown);
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
 
 /*Typography end*/
 /*----------Basic information end----------*/
@@ -252,7 +285,7 @@ input[type='checkbox'] { display: none; }
     /*Title text collapsible*/
     display: block;
     font-weight: bold;
-    font-family: var(--titleFont);
+    font-family: var(--titleFontFam);
     font-size: 1.5rem;
     text-align: center;
     padding: 0.5rem 0 0 0;
@@ -352,27 +385,27 @@ footer{
 /*----------Media queries End----------*/
 @media screen and (max-width: 576px) {
 
-    header h1 {
-        /*natuurverhaal.nl*/
-        color: var(--black);
-        font-family: var(--titleFont);
-        font-size: calc(var(--titleSize) - 2.5rem);
-    }
+    /*header h1 {*/
+    /*    !*natuurverhaal.nl*!*/
+    /*    color: var(--black);*/
+    /*    font-family: var(--titleFont);*/
+    /*    font-size: calc(var(--h1FontSize) - 2.5rem);*/
+    /*}*/
 
-    a:hover {
-        font-size: calc(var(--aHoverFontSize) - 1rem);
-        margin-top: -0.2rem;
-    }
+    /*a:hover {*/
+    /*    font-size: calc(var(--aHoverEaseOutFontSize) - 1rem);*/
+    /*    margin-top: -0.2rem;*/
+    /*}*/
 
-    a {
-        font-size: calc(var(--aFontSize) - 0.5rem);
-    }
+    /*a {*/
+    /*    font-size: calc(var(--aFontSize) - 0.5rem);*/
+    /*}*/
 
-    .postDatum {
-        font-size: 1.2rem;
-    }
+    /*.postDatum {*/
+    /*    font-size: 1.2rem;*/
+    /*}*/
 
-    h2 {
-        font-size: calc(var(--h2FontSize) - 0.5rem);
-    }
+    /*h2 {*/
+    /*    font-size: calc(var(--h2FontSize) - 0.5rem);*/
+    /*}*/
 }
