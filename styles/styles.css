@@ -244,6 +244,11 @@ main {
     width: 400px;
 }
 
+.blogYouTube {
+    width: 800px;
+    height: 450px;
+}
+
 .sideBarImage {
     Border: 6px solid black;
     width: 400px;
@@ -451,4 +456,10 @@ footer{
     .blogImageHorizontal {
         width: 300px;
     }
+
+    .blogYouTube {
+        width: 400px;
+        height: 225px;
+    }
+
 }
