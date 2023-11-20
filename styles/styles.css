@@ -244,16 +244,16 @@ main {
     width: 400px;
 }
 
-.blogYouTube {
-    width: 800px;
-    height: 450px;
-}
-
 .sideBarImage {
     Border: 6px solid black;
     width: 400px;
     object-fit: contain;
     margin: 30px 30px 0 0;
+}
+
+.blogYouTube {
+    width: 800px;
+    height: 450px;
 }
 
 main .blogBox {
