@@ -24,7 +24,7 @@
     /*font-family`s end*/
 
     /*font-sizes start*/
-    --h1FontSize: 5rem;
+    --mainTitleFontSize: 8rem;
     --h2FontSize: 1.8rem;
     --pFontSize: 1.4rem;
     --aTitleFontSize: 2rem;
@@ -66,9 +66,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--titleFontFam);
 }
 
-header h1 {
+header a {
     /*natuurverhaal.nl*/
-    font-size: var(--h1FontSize);
+    font-size: var(--mainTitleFontSize);
+    color: var(--black);
+    font-family: var(--titleFontFam);
+    text-decoration: none;
 }
 
 h2 {
@@ -104,11 +107,6 @@ a {
 /*    text-decoration: none;*/
 /*}*/
 
-a:hover {
-    color: var(--brown);
-    transition: all 0.25s ease-in-out;
-}
-
 .EaseOutA a:hover {
     margin-top: -0.7rem;
     transition: all 0.25s ease-in-out;
@@ -140,7 +138,6 @@ a:hover {
 }
 
 .EaseOutAMoreBlogs a:hover {
-    margin-top: -0.9rem;
     transition: all 0.25s ease-in-out;
     font-size: var(--aTitleFontSize);
     font-family: var(--titleFontFam);
@@ -166,19 +163,13 @@ header {
     background-size: cover;
 }
 
-/*header {*/
-/*    background-color: #6E6043;*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*}*/
-
 .headerInnerBox {
     /*headerInnerBox*/
     /*Border: 2px solid darkgreen;*/
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 4rem;
+    margin: 24rem 4rem 4rem 4rem;
 }
 
 header h1 {
@@ -189,29 +180,29 @@ header h1 {
     /*margin: 4rem 0 0 4rem;*/
 }
 
-header ul {
-    /*header nav list*/
-    /*Border: 2px solid #a80202;*/
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 0 2rem 0;
-    }
-
-header li {
-    /*header nav list*/
-    /*Border: 2px solid #b700c7;*/
-    display: flex;
-    flex-direction: row;
-    margin: 0.7rem 0;
-}
-
-
-
 
 /*----------Header end----------*/
 /*----------Main start----------*/
 
 main {
+    /*mainOuterBox*/
+    /*Border: 2px solid #d46900;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--white);
+}
+
+.navBox {
+    /*mainOuterBox*/
+    /*Border: 2px solid #d46900;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 30px 0 0 0;
+}
+
+.blogMainBox {
     /*mainOuterBox*/
     /*Border: 2px solid #d46900;*/
     display: flex;
@@ -414,7 +405,7 @@ footer{
         /*natuurverhaal.nl*/
         color: var(--black);
         font-family: var(--titleFontFam);
-        font-size: calc(var(--h1FontSize) - 3rem);
+        font-size: calc(var(--mainTitleFontSize) - 3rem);
     }
 
     .headerInnerBox {
