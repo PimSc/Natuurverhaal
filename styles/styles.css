@@ -410,6 +410,11 @@ footer{
         font-size: calc(var(--h1FontSize) - 3rem);
     }
 
+    .headerInnerBox {
+        width: 100%;
+        margin: 1rem;
+    }
+
     main {
         max-width: 576px;
     }
