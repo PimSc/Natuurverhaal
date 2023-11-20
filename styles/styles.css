@@ -407,7 +407,7 @@ footer{
         /*natuurverhaal.nl*/
         color: var(--black);
         font-family: var(--titleFontFam);
-        font-size: calc(var(--h1FontSize) - 2.5rem);
+        font-size: calc(var(--h1FontSize) - 3rem);
     }
 
     main {
