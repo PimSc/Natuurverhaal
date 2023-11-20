@@ -55,8 +55,7 @@ img {
 
 
 /*Typography start*/
-button,
-input {
+button {
     font-family: var(--normalTextFontFam);
 }
 
@@ -66,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--titleFontFam);
 }
 
-header a {
+.home-title {
     /*natuurverhaal.nl*/
     font-size: var(--mainTitleFontSize);
     color: var(--black);
@@ -144,9 +143,48 @@ a {
     color: var(--brown);
     font-weight: bold;
     text-decoration: none;
-
 }
 
+
+
+
+/*Title fade-in effect start*/
+.home-title {
+    color: transparent; /* text shadow does all the work */
+    position: absolute;
+    opacity: 0;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+    text-shadow: 0 0 1em black; /* initiële stijl toegevoegd */
+    animation: fadeInOnly 5s ease-in-out 0s forwards; /* aangepaste vertraging */
+}
+
+h1:nth-child(2) {
+    animation-delay: 5s; /* aangepaste vertraging */
+}
+
+h1:nth-child(3) {
+    animation-delay: 10s; /* aangepaste vertraging */
+}
+
+@keyframes fadeInOnly {
+    0% {
+        text-shadow: 0 0 1em black;
+        opacity: 0;
+        margin-left: -0.5em;
+    }
+    25% {
+        text-shadow: 0 0 0 black;
+        opacity: 1;
+        margin-left: 0;
+    }
+    100% {
+        text-shadow: 0 0 0 black;
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+/*Title fade-in effect end*/
 
 /*Typography end*/
 /*----------Basic information end----------*/
@@ -163,8 +201,9 @@ header {
     background-size: cover;
 }
 
+
 .headerInnerBox {
-    /*headerInnerBox*/
+    /*headerInnerBox Natuurverhaal.nl*/
     /*Border: 2px solid darkgreen;*/
     display: flex;
     flex-direction: column;
@@ -172,13 +211,7 @@ header {
     margin: 24rem 4rem 4rem 4rem;
 }
 
-header h1 {
-    /*Natuurverhaal.nl*/
-    /*Border: 2px solid #a80202;*/
-    display: flex;
-    flex-direction: row;
-    /*margin: 4rem 0 0 4rem;*/
-}
+
 
 
 /*----------Header end----------*/
