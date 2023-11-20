@@ -47,6 +47,8 @@ button:hover {
 img {
     width:100%
 }
+
+
 /*Other basic information end*/
 
 
@@ -440,5 +442,13 @@ footer{
 
     h2 {
         font-size: calc(var(--h2FontSize) - 0.5rem);
+    }
+
+    .blogImageVertical {
+        width: 250px;
+    }
+
+    .blogImageHorizontal {
+        width: 300px;
     }
 }
