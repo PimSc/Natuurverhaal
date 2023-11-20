@@ -245,7 +245,6 @@ main {
 .sideBarImage {
     Border: 6px solid black;
     width: 400px;
-    height: 400px;
     object-fit: contain;
     margin: 30px 30px 0 0;
 }
@@ -409,6 +408,16 @@ footer{
         color: var(--black);
         font-family: var(--titleFontFam);
         font-size: calc(var(--h1FontSize) - 2.5rem);
+    }
+
+    main {
+        max-width: 576px;
+    }
+
+    .sideBarImage {
+        Border: 0 solid black;
+        width: 0;
+        margin: -30px -30px 0 0;
     }
 
     a:hover {
